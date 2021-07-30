@@ -50,6 +50,23 @@ function ausgabeNamenParams(firstName,familyName)
     console.log("Hallo " + firstName + " " + familyName + "!");    
 }
 
-ausgabeNamenParams("Kevin", "Clegg");
-ausgabeNamenParams("Clegg","Kevin");
-ausgabeNamenParams(prompt("Vorname:?"),prompt("Nachname:?"));
+// ausgabeNamenParams("Kevin", "Clegg");
+// ausgabeNamenParams("Clegg","Kevin");
+// ausgabeNamenParams(prompt("Vorname:?"),prompt("Nachname:?"));
+
+/***** Funktionen 03a *****/
+// 03a. Vorbereitung
+// Postulat: one function = one job (uncle Bob)
+// SRP single responsibility principle
+
+function ausgabeNamenParams2(firstName,familyName) 
+{
+    // 1. Job: string composing
+    const gap = " ";
+    const outputStr = "Hallo " + firstName + gap + familyName + "!";
+    
+    // 2. Job: string output
+    console.log(outputStr);    
+}
+
+ausgabeNamenParams2("Kevin", "Clegg");
