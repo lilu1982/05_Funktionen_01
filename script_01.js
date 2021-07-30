@@ -69,4 +69,23 @@ function ausgabeNamenParams2(firstName,familyName)
     console.log(outputStr);    
 }
 
-ausgabeNamenParams2("Kevin", "Clegg");
+// ausgabeNamenParams2("Kevin", "Clegg");
+
+/***** Funktionen 03b *****/
+
+// 1. Job: string composing
+output(getString("Kevin", "Clegg"));
+// getString("Kevin", "Clegg")
+function getString(firstName,familyName) {
+    const gap = " ";
+    const outputStr = "Hallo " + firstName + gap + familyName + "!";
+    return outputStr; // ---> Daten  
+}
+
+
+// 2. Job: string output
+// output("hi"); // Test UNIT-Test TDD
+function output(outputStr) {
+    console.log(outputStr);
+}
+
