@@ -28,10 +28,16 @@ function ausgabeNamen()
 
 function ausgabeNamenParam(firstName) 
 {
+    if (firstName == "" || firstName == undefined) 
+    {
+        firstName = "Nobody";
+    }
+    
     console.log("Hallo " + firstName + "!");    
 }
 
-ausgabeNamenParam("Kevin"); // --> Argument(e) args
-ausgabeNamenParam("Maurice");
-ausgabeNamenParam("Karolina");
-ausgabeNamenParam(prompt("Bitte Vornamen eingeben:"));
+// ausgabeNamenParam("Kevin"); // --> Argument(e) args
+// ausgabeNamenParam("Maurice");
+// ausgabeNamenParam("Karolina");
+ausgabeNamenParam();
+// ausgabeNamenParam(prompt("Bitte Vornamen eingeben:"));
